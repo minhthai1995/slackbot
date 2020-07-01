@@ -11,7 +11,7 @@ var token = new Tokenizer();
 sw = require('stopword');
 
 const bot = new SlackBot({
-    token: 'xoxb-1151628243062-1151663326518-MHiQCbCtwT4shOcT0caDFVl8',
+    token: 'xoxb-1184739561072-1200979617543-pjxpyFFTRfjjTtaoNYYnKbwJ',
     name: 'test_bot'
 });
 
@@ -36,7 +36,7 @@ bot.on('message', (data) => {
 });
 
 function handleMessage(message){
-    const responseMes = classify(message)
+    const responseMes = classify(message);
     console.log('response', responseMes);
     const params = {
         icon_emoji: ':laughing:'
